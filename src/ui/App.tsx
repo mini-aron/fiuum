@@ -1,10 +1,13 @@
 import React from 'react';
+import Button from '../shared/components/Button';
 
 function App() {
+  const CopyStyle = () => {};
+  const applyStyle = () => {};
   return (
     <div>
-      <p>Select Text Node and Click</p>
-      <button type="button">클릭하세요</button>
+      <Button onClick={CopyStyle} text="Copy Text Style" />
+      <Button onClick={applyStyle} text="apply Text Style" />
     </div>
   );
 }
